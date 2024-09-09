@@ -1,0 +1,246 @@
+#about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 750px;
+}
+
+#bg {
+    background-color: #22525c;
+    width: 95%;
+    height: 517px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+#content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 7% 0;
+}
+
+.content_title {
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 60.48px;
+    text-align: center;
+}
+
+.content_description {
+    width: 48%;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: center;
+}
+
+#card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card_1,
+.card_2,
+.card_3 {
+    width: 365.94px;
+    height: 245px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    border-radius: 14px;
+    border: 1px solid #e9eeef;
+}
+
+.card_title {
+    color: #414a59;
+    font-size: 1.25rem;
+    font-weight: 800;
+    line-height: 25.2px;
+    text-align: left;
+    text-transform: uppercase;
+    padding: 0 0 0 36px;
+}
+
+.card_description {
+    width: 80%;
+    color: #737373;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+}
+
+/* responsividade */
+@media screen and (max-width: 398px) {
+    #about {
+        height: auto;
+        margin: 0 0 50px;
+        justify-content: center;
+    }
+
+    #bg {
+        width: 88%;
+        position: relative;
+    }
+
+    #content {
+        padding: 7% 0 0;
+    }
+
+    .content_title {
+        width: 100%;
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+
+    .content_description {
+        width: 90%;
+        font-size: 0.9rem;
+        padding: 0 0 20px;
+    }
+
+    #card {
+        position: relative;
+        margin-top: 10px; /* Ajuste conforme necessário para sair do fundo */
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start; /* ou center, se preferir centralizado */
+        gap: 30px;
+        overflow-x: auto;
+        padding-bottom: 10px; /* Para espaço entre o conteúdo e o scroll */
+        scroll-behavior: smooth; /* Animação suave ao rolar */
+        margin-left: -18px; /* Sobressair pela esquerda */
+        width: calc(100% + 40px); /* Sobressair pela direita */
+        scroll-behavior: smooth;
+    }
+
+    .card_1,
+    .card_2,
+    .card_3 {
+        min-width: 250px; /* Defina a largura mínima dos cards */
+    }
+
+    .card_title {
+        font-size: 1.2rem;
+        padding: 0 0 0 20px;
+    }
+}
+
+@media screen and (min-width: 399px) and (max-width: 485px) {
+    #about {
+        height: auto;
+        margin: 0 0 200px;
+        justify-content: center;
+    }
+
+    #bg {
+        width: 88%;
+        position: relative;
+    }
+
+    #content {
+        padding: 7% 0 0;
+    }
+
+    .content_title {
+        width: 100%;
+        font-size: 2.3rem;
+    }
+
+    .content_description {
+        width: 80%;
+    }
+
+    #card {
+        position: relative;
+        margin-top: 70px; /* Ajuste conforme necessário para sair do fundo */
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start; /* ou center, se preferir centralizado */
+        gap: 30px;
+        overflow-x: auto;
+        padding-bottom: 10px; /* Para espaço entre o conteúdo e o scroll */
+        scroll-behavior: smooth; /* Animação suave ao rolar */
+        margin-left: -40px; /* Sobressair pela esquerda */
+        width: calc(100% + 65px); /* Sobressair pela direita */
+        scroll-behavior: smooth;
+    }
+
+    .card_title {
+        font-size: 1.5rem;
+        padding: 0 0 0 20px;
+    }
+
+    .card_1,
+    .card_2,
+    .card_3 {
+        min-width: 300px; /* Defina a largura mínima dos cards */
+    }
+}
+
+@media screen and (min-width: 486px) and (max-width: 1220px) {
+    #about {
+        height: auto;
+        margin: 0 0 100px;
+        justify-content: center;
+    }
+
+    #bg {
+        width: 88%;
+        position: relative;
+    }
+
+    #content {
+        padding: 7% 0 0;
+    }
+
+    .content_title {
+        width: 100%;
+        font-size: 2.6rem;
+    }
+
+    .content_description {
+        width: 80%;
+    }
+
+    #card {
+        position: relative;
+        margin-top: 70px; /* Ajuste conforme necessário para sair do fundo */
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start; /* ou center, se preferir centralizado */
+        gap: 30px;
+        overflow-x: auto;
+        padding-bottom: 10px; /* Para espaço entre o conteúdo e o scroll */
+        scroll-behavior: smooth; /* Animação suave ao rolar */
+        margin-left: -40px; /* Sobressair pela esquerda */
+        width: calc(100% + 80px); /* Sobressair pela direita */
+        scroll-behavior: smooth;
+    }
+
+    .card_1,
+    .card_2,
+    .card_3 {
+        min-width: 300px; /* Defina a largura mínima dos cards */
+    }
+}
+
+@media (min-width: 1440px) {
+    #bg {
+        background-color: #22525c;
+        width: 90%;
+        height: 517px;
+        border-radius: 20px;
+        margin: auto;
+    }
+}
